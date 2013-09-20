@@ -1,5 +1,28 @@
+body {
+	background-color:#1D1D1D;
+	color:#ddd;
+}
+
+header {
+	padding:50px 0px;
+}
+
 h1 {
-	font-size:80px;
+	font-size:140px;
+	text-align:center;
+	font-family: 'Istok Web', sans-serif;
+}
+
+h2 {	
+	color:#636363;
+	font-weight:700;
+}
+
+.subtitle {
+	font-family: 'Gudea', sans-serif;
+	text-align:center;
+	font-size:40px;
+	color:white;
 }
 
 a {
@@ -9,4 +32,12 @@ a {
 a:hover {
 	color:#42A535;
 	text-decoration:none;
+}
+
+ul {
+	padding:10px 0px 10px 30px;
+}
+
+.article {
+	padding:10px;
 }
