@@ -1,6 +1,10 @@
 {"articles":[
+	{
+		"titre":"dotJS le 02 Décembre 2013 à Paris",
+		"contenu":"<a href='http://www.dotjs.eu/'>dotJS</a> est la plus grande conférence française sur le JavaScript. Elle aura lieu le 02 Décembre 2013 au Théâtre de Paris. Retrouvez toutes les infos sur le site de <a href='http://www.dotjs.eu/'>dotJS</a>."
+	},
     {
-		"titre":"Première conférence FranceJS à Toulouse !",
+		"titre":"Première conférence FranceJS à Toulouse",
 		"contenu":"La communauté FranceJS organise sa première conférence à l'occasion du Capitole du Libre, les 23 et 24 novembre 2013 à Toulouse. Retrouvez toutes les infos sur le site de <a href='http://francejs.org/conf2013.html'>FranceJS</a>"
 	},
     {
