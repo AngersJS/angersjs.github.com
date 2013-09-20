@@ -13,6 +13,20 @@ requirejs([
     'jquery', 
     'bootstrap'
     ], function($, _bootstrap){
+		$('#articles').articles();
         // this is where all the site code should begin
         return {};
 });
+
+$.fn.articles = function() {
+	var element = $(this);
+	$.getJSON('data/articles.json', function(data) {
+		var i = 0;
+		$.each(data.articles, function(j, item){
+			var article = $("<div/>").addClass('article').appendTo(element);
+			var h3  = $("<h3/>").html(article.titre).appendTo(article);
+			var icons = $("<p/>").html(article.contenu).appendTo(article);
+			i++;
+		});
+	});
+}

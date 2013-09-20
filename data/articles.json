@@ -1,0 +1,14 @@
+{"articles":[
+    {
+		"titre":"Première conférence FranceJS à Toulouse !",
+		"contenu":"La communauté FranceJS organise sa première conférence à l'occasion du Capitole du Libre, les 23 et 24 novembre 2013 à Toulouse. Retrouvez toutes les infos sur le site de <a href='http://francejs.org/conf2013.html'>FranceJS</a>"
+	},
+    {
+		"titre":"LyonJS le 30 Septembre 2013",
+		"contenu":"Retrouvez toutes les infos sur le site de <a href='http://lyonjs.org/'>LyonJS</a>"
+	},
+	{
+		"titre":"CaenJS le 14 Septembre 2013",
+		"contenu":"Retrouvez toutes les infos sur le site de <a href='http://www.caenjs.org/'>CaenJS</a>"
+	},
+]}
