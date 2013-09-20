@@ -24,8 +24,10 @@ requirejs([
 					var contenu = $("<p/>").html(item.contenu).appendTo(article);
 					i++;
 				});
-			}).fail(function(d) {
-                alert("error");
+			}).fail(function(jqXHR, textStatus, errorThrow) {
+                var error = $("<div/>").html(jqXHR.responseText).addClass('error').appendTo(element);
+                var textStatus = $("<div/>").html(textStatus).addClass('textStatus').appendTo(element);
+                var errorThrow = $("<div/>").html(errorThrow).addClass('errorThrow').appendTo(element);
             });
 		}
 
