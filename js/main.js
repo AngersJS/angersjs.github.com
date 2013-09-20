@@ -20,11 +20,13 @@ requirejs([
 				var i = 0;
 				$.each(data.articles, function(j, item){
 					var article = $("<div/>").addClass('article').appendTo(element);
-					var h3  = $("<h3/>").html(article.titre).appendTo(article);
-					var icons = $("<p/>").html(article.contenu).appendTo(article);
+					var h3  = $("<h3/>").html(item.titre).appendTo(article);
+					var contenu = $("<p/>").html(item.contenu).appendTo(article);
 					i++;
 				});
-			});
+			}).fail(function(d) {
+                alert("error");
+            });
 		}
 
 		$('#articles').articles();
