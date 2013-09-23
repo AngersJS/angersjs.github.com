@@ -41,3 +41,29 @@ ul {
 .article {
 	padding:10px;
 }
+
+@media (max-width: 767px) {
+	body {
+		font-size:12px;
+	}
+	
+	header {
+		padding:30px 0px;
+	}
+	
+	h1 {
+		font-size:76px;
+	}
+	
+	.subtitle {
+		font-size:22px;
+	}
+	
+	h2 {
+		font-size:18px;
+	}
+	
+	h3 {
+		font-size:16px;
+	}
+}
