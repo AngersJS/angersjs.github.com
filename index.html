@@ -26,7 +26,7 @@
 				<div id="articles" ng-controller="ArticleListCtrl">
 					<div ng-repeat="article in articles">
 						<h3>{{article.titre}}</h3>
-						<p ng-html-bind="article.contenu"></p>
+						<p ng-bind-html="article.contenu"></p>
 					</div>
 				</div>
 			</div>
