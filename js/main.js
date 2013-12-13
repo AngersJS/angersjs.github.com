@@ -3,8 +3,8 @@ requirejs.config({
     paths: {
         jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min',
         bootstrap: '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min',
-        angular: '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.4/angular.min',
-        ngSanitize: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.js'
+        angular: '//ajax.googleapis.com/ajax/libs/angular.js/1.2.4/angular.min',
+        ngSanitize: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min'
 	},
     shim: {
         'angular' : {exports : 'angular'},
