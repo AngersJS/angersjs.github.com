@@ -1,3 +1,6 @@
+angular.module('AngersJS', ['ngSanitize'])
+.controller('ArticleListCtrl', ['$scope', '$http', ArticleListCtrl]);
+
 /**
  * Controller ArticleListCtrl
  */
