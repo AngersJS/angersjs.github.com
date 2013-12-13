@@ -3,11 +3,16 @@ requirejs.config({
     paths: {
         jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min',
         bootstrap: '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min',
-        angular: '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min'
+        angular: '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.4/angular.min',
+        ngSanitize: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.js'
 	},
     shim: {
-        'angular' : {'exports' : 'angular'},
-        'bootstrap' : {deps: ['jquery']}
+        'angular' : {exports : 'angular'},
+        'bootstrap' : {deps: ['jquery']},
+        'ngSanitize' : {
+            exports: 'ngSanitize',
+            deps: ['angular']
+        },
     }
 });
 
@@ -17,9 +22,10 @@ requirejs.config({
 requirejs([
         'jquery', 
         'bootstrap',
-        'angular'
+        'angular',
+        'ngSanitize'
     ], 
-    function(jquery, _bootstrap, angular){		
+    function(jquery, _bootstrap, angular, ngSanitize){		
         ArticleListCtrl.$inject = ['$scope', '$http'];
         return {};
     }
