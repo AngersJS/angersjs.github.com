@@ -1,11 +1,10 @@
-angular.module('AngersJS', ['ngSanitize'])
-.controller('ArticleListCtrl', ['$scope', '$http', ArticleListCtrl]);
+var AngersJS = angular.module('AngersJS', ['ngSanitize']);
 
 /**
  * Controller ArticleListCtrl
  */
-function ArticleListCtrl($scope, $http) {
+AngersJS.controller('ArticleListCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('data/articles.json').success(function(data) {
         $scope.articles = data;
     });
-}
+}]);
